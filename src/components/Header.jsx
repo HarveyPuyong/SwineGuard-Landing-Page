@@ -1,15 +1,17 @@
 import {Link} from "react-scroll";
 import Logo from "./../assets/icons/swineGuard-logo.png"
+import "./../styles/header.css"
+
 
 
 function Header() {
   return(
-    <header>
-      <div className="logo">
-        <img src={Logo} alt="" />
+    <header className="when-hide-nav">
+      <div className="logo when-hide-nav">
+        <img src={Logo} alt={Logo} />
         <p className="label">Swine Guard</p>
       </div>
-      <div className="show-nav-icon">
+      <div className="toggle-btn show-nav-icon">
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>

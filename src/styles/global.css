@@ -1,3 +1,47 @@
+:root{
+  --primary-color: #2FC375;
+  --secondary-color: #000000;
+  --background-color: #FFFFFF;
+
+  --header-logo-fSize: clamp(0.875rem, 2vw, 1.5625rem); /* 14px - 25px */
+  --nav-fSize: clamp(1.125rem, 1.5vw, 1.25rem); /* 18px - 20px */
+  --home-logo-fSize: clamp(3.125rem, 5vw, 6.25rem); /* 50px - 100px */
+  --home-signup-fSize: clamp(1rem, 1.5vw, 1.25rem); /* 16px - 20px */
+  --home-body-fSize: clamp(0.875rem, 1.5vw, 1.125rem); /* 14px - 18px */
+  --home-joinBtn-fSize: clamp(0.75rem, 2vw, 1.25rem); /* 12px - 20px */
+  --home-slider-body-fSize: clamp(0.875rem, 1.5vw, 1.125rem); /* 14px - 18px */
+
+  --getToKnow-section-heading-fSize: clamp(1.5rem, 3vw, 2rem); /* 24px - 32px */
+  --getToKnow-cardLabel-fSize: 1.25rem; /* 20px */
+  --getToKnow-carddetails-fSize: 0.9375rem; /* 15px */
+  --getToKnow-cardBtn-fSize: 0.875rem; /* 14px */
+
+  --swineExperts-sectionHeading-fSize: clamp(1.5rem, 4vw, 2.625rem); /* 24px - 42px */
+  --swineExperts-name-fSize: clamp(1.125rem, 2vw, 1.375rem); /* 18px - 22px */
+  --swineExperts-role-fSize: clamp(0.875rem, 2vw, 1.25rem); /* 14px - 20px */
+  --swineExperts-detail-fSize: clamp(0.875rem, 1.5vw, 1rem); /* 14px - 16px */
+
+  --serviceSection-heading-fSize: clamp(1.5rem, 4vw, 2.625rem); /* 24px - 42px */
+  --serviceCard-label-fSize: clamp(0.875rem, 1.5vw, 1.125rem); /* 14px - 18px */
+  --serviceCard-details-fSize: clamp(0.875rem, 1.5vw, 1rem); /* 14px - 16px */
+
+  --goals-heading-fSize: clamp(1.625rem, 5vw, 3.25rem); /* 26px - 52px */
+  --goals-subheading-fSize: clamp(1.5rem, 3vw, 2rem); /* 24px - 32px */
+  --goals-details-fSize: clamp(0.875rem, 1.5vw, 1.125rem); /* 14px - 18px */
+  --goals-cardLabel-fSize: clamp(0.75rem, 2vw, 1.25rem); /* 12px - 20px */
+
+  --contactSection-heading-fSize: clamp(1.75rem, 6vw, 4rem); /* 28px - 64px */
+  --contactSection-body-fSize: clamp(0.875rem, 2vw, 1.25rem); /* 14px - 20px */
+  --contactSection-joinBtn-fSize: clamp(0.875rem, 2vw, 1.25rem); /* 14px - 20px */
+
+  --appointmentForm-heading-fSize: clamp(1.5rem, 3vw, 2rem); /* 24px - 32px */
+  --appointmentForm-reminder-fSize: clamp(0.875rem, 1.5vw, 1rem); /* 14px - 16px */
+  --appointmentForm-inputLabel-fSize: clamp(0.75rem, 1.5vw, 1rem); /* 12px - 16px */
+  --appointmentForm-reqBtn-fSize: clamp(0.875rem, 1.5vw, 1rem); /* 14px - 16px */
+
+  --footer-fSize: 1rem; /* 16px */
+}
+
 img{
   width: 50%;
 }
@@ -6,4 +50,9 @@ img{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  padding-top: 3.2rem;
 }
