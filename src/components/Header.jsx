@@ -3,8 +3,12 @@ import Logo from "./../assets/icons/swineGuard-logo.png"
 import "./../styles/header.css"
 
 
-
 function Header() {
+  document.addEventListener('resize', ()=>{
+    const headerHeight = document.querySelector('header').offsetHeight;
+    document.body.style.paddingTop = `${headerHeight}px`
+  });
+
   return(
     <header className="when-hide-nav">
       <div className="logo when-hide-nav">
