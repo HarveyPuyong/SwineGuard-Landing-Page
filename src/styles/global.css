@@ -53,6 +53,10 @@ img{
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   --header-height: clamp(59px, 15vw, 101px);
 

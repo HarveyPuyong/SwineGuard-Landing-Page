@@ -51,4 +51,5 @@
   border-radius: 20px;
   color: var(--background-color);
   padding: 0.2rem 0.5rem;
+  cursor: pointer;
 }

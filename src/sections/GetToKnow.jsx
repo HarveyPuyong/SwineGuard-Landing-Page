@@ -25,7 +25,7 @@ const knowMoreData = [
     label: "Vet Goals",
     details:
       "The goal of SwineGuard is to promote a healthy and sustainable swine industry by facilitating seamless communication between local swine raisers and the Provincial Veterinary Office. By ensuring transparency in information, SwineGuard helps create a more productive, responsible, and virus-free swine industry while enhancing the overall well-being of the agricultural sector.",
-    link: "swine-goals-section",
+    link: "goals-section",
   },
 ];
 
