@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import HomeSection from "../sections/HomeSection";
-import KnowMoreSection from "../sections/KnowmoreSection";
+import GetToKnowSection from "../sections/GetToKnow";
 import SwineExpertsSection from "../sections/SwineExpertsSection";
 import ServicesSection from "../sections/SecvicesSection";
 import GoalsSection from "../sections/GoalsSection";
@@ -12,7 +12,7 @@ function LandingPage(){
     <>
       <Header/>
       <HomeSection/>
-      <KnowMoreSection/>
+      <GetToKnowSection/>
       <SwineExpertsSection/>
       <ServicesSection/>
       <GoalsSection/>

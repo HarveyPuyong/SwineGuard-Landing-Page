@@ -2,6 +2,7 @@ import swineExpertIcon from "./../assets/icons/swine-expert-icon.png"
 import swineServiceIcon from "./../assets/icons/swine-service-icon.png"
 import swineGoalsIcon from "./../assets/icons/swine-goal-icon.png"
 import KnowMoreCard from "../components/KnowMoreCards"
+import "./../styles/sectionsStyle/getToKnowSection.css"
 
 
 const knowMoreData = [
@@ -29,11 +30,11 @@ const knowMoreData = [
 ];
 
 
-function KnowMoreSection(){
+function GetToKnowSection(){
   return(
-    <section id="knowmore-section">
+    <section id="get-to-know-section">
       <h1 className="section-heading">Get To Know More</h1>
-      <div className="knowmore-cards-container">
+      <div className="cards-container d-grid">
         {knowMoreData.map((data, index) => <KnowMoreCard key={index} data={data} />)}
       </div>
     </section>
@@ -41,4 +42,4 @@ function KnowMoreSection(){
 }
 
 
-export default KnowMoreSection
+export default GetToKnowSection
