@@ -23,7 +23,7 @@
   --swineExperts-details-fSize: clamp(0.875rem, 1.5vw, 1rem); /* 14px - 16px */
 
   --serviceSection-heading-fSize: clamp(1.5rem, 4vw, 2.625rem); /* 24px - 42px */
-  --serviceCard-label-fSize: clamp(0.875rem, 1.5vw, 1.125rem); /* 14px - 18px */
+  --serviceCard-name-fSize: clamp(0.875rem, 1.5vw, 1.125rem); /* 14px - 18px */
   --serviceCard-details-fSize: clamp(0.875rem, 1.5vw, 1rem); /* 14px - 16px */
 
   --goals-heading-fSize: clamp(1.625rem, 5vw, 3.25rem); /* 26px - 52px */

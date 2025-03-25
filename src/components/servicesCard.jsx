@@ -1,9 +1,11 @@
 function ServiceCard({data}){
   return(
     <div className="service-card">
-      <img src={data.img} alt={data.img} className="service-img" />
-      <h4 className="service-name">{data.name}</h4>
-      <p className="service-details">{data.details}</p>
+      <div className="img-and-name">
+        <img src={data.img} alt={data.img} className="img" />
+        <h4 className="name">{data.name}</h4><br />
+      </div>
+        <p className="details">{data.details}</p>
     </div>
   )
 }

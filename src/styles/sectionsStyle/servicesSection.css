@@ -1,0 +1,49 @@
+#services-section{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#services-section .section-heading{
+  font-size: var(--serviceSection-heading-fSize);
+  margin-bottom: 2.5rem;
+}
+
+#services-section .services-card-container{
+  width: clamp(335px, 90vw, 1216px);
+  padding: 0 1rem;
+}
+
+#services-section .services-card-container.d-grid{
+  display: grid;
+  gap: 1.2rem;
+  margin-inline: auto;
+}
+
+#services-section .services-card-container .service-card{
+  border: 1.7px solid #919191;
+  border-radius: 8px;
+  padding: 0.8rem;
+}
+
+#services-section .services-card-container .service-card .img-and-name{
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+#services-section .services-card-container .service-card .img{
+  flex: 1.2;
+  height: clamp(79.9px, 10vw, 158px);
+}
+
+#services-section .services-card-container .service-card  .name{
+  font-size: var(--serviceCard-name-fSize);
+  flex: 1;
+}
+
+#services-section .services-card-container .service-card .details{
+  display: none;
+  font-size: var(--serviceCard-details-fSize);
+  padding: 0 0.2rem;
+  margin-top: 1rem;
+}
