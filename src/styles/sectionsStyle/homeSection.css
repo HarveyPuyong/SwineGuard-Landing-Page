@@ -74,9 +74,9 @@
 #home-section .banner .overlay-content .signup-body{
   font-size: var(--home-signup-body-fSize);
   color: var(--background-color);
-  text-align: left;
+  text-align: justify;
   line-height: 1.2em;
-  padding: 0.5rem;
+  padding: 0.5rem 0.3rem;
   margin-bottom: 1rem;
 }
 

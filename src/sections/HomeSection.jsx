@@ -17,7 +17,7 @@ function HomeSection(){
             </div>
             <div className="signup-container">
               <h5 className="signup-heading">Sign up and Login now!</h5>      
-              <p  className="signup-body">&nbsp; “Join us to revolutionize swine farming. Monitor your herd's health and boost productivity start now by creating your account!”</p>
+              <p  className="signup-body">&nbsp;“Join us to revolutionize swine farming. Monitor your herd's health and boost productivity start now by creating your account!”</p>
               <button className="join-btn">Join Now!</button>
             </div>        
           </div>

@@ -1,11 +1,11 @@
 #get-to-know-section{
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 9rem;
 }
 
 #get-to-know-section .section-heading{
   font-size: var(--getToKnow-section-heading-fSize);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 #get-to-know-section .cards-container.d-grid{
