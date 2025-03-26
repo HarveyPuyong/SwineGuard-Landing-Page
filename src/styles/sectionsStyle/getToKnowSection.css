@@ -24,8 +24,8 @@
 }
 
 #get-to-know-section .cards-container .knowmore-card .icon{
-  width: 90px;
-  height: 90px;
+  width: clamp(80px, 25vw, 90px);
+  height: clamp(80px, 25vw, 90px) ;
   margin-bottom: 0.4rem;
 }
 

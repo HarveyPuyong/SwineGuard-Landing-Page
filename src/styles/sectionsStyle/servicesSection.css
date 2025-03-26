@@ -1,6 +1,7 @@
 #services-section{
   text-align: center;
   margin-bottom: 4rem;
+  width: 100%;
 }
 
 #services-section .section-heading{
@@ -9,8 +10,8 @@
 }
 
 #services-section .services-card-container{
-  width: clamp(335px, 90vw, 1216px);
-  padding: 0 1rem;
+  width: clamp(320px, 90vw, 1216px);
+  padding: 0 1%;
 }
 
 #services-section .services-card-container.d-grid{
@@ -22,7 +23,7 @@
 #services-section .services-card-container .service-card{
   border: 1.7px solid #919191;
   border-radius: 8px;
-  padding: 0.8rem;
+  padding: 2%;
 }
 
 #services-section .services-card-container .service-card .img-and-name{
@@ -32,13 +33,13 @@
 }
 
 #services-section .services-card-container .service-card .img{
-  flex: 1.2;
+  flex: 60%;
   height: clamp(79.9px, 10vw, 158px);
 }
 
 #services-section .services-card-container .service-card  .name{
   font-size: var(--serviceCard-name-fSize);
-  flex: 1;
+  flex: 40%;
 }
 
 #services-section .services-card-container .service-card .details{
