@@ -1,6 +1,7 @@
 import fbIcon from "./../assets/icons/fb-icon.png"
 import emailIcon from "./../assets/icons/email.png"
 import phoneIcon from "./../assets/icons/phone.png"
+import "./../styles/footer.css"
 
 
 function Footer(){

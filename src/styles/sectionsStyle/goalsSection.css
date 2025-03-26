@@ -2,6 +2,7 @@
   position: relative;
   margin-bottom: 13rem;
   padding-bottom: 15%;
+  color: var(--secondary-color);
 }
 
 #goals-section .green-background{
@@ -24,7 +25,7 @@
 #goals-section .img-info-container{
   padding:0 7%;
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 #goals-section .pig-image {

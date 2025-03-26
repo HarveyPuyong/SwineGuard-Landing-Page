@@ -1,6 +1,7 @@
 #get-to-know-section{
   text-align: center;
   margin-bottom: 9rem;
+  color: var(--secondary-color);
 }
 
 #get-to-know-section .section-heading{

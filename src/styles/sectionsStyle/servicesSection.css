@@ -2,6 +2,7 @@
   text-align: center;
   margin-bottom: 4rem;
   width: 100%;
+  color: var(--secondary-color);
 }
 
 #services-section .section-heading{
@@ -43,7 +44,6 @@
 }
 
 #services-section .services-card-container .service-card .details{
-  display: none;
   font-size: var(--serviceCard-details-fSize);
   padding: 0 0.2rem;
   margin-top: 1rem;

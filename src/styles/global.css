@@ -38,7 +38,7 @@
   --appointmentForm-heading-fSize: clamp(1.5rem, 3vw, 2rem); /* 24px - 32px */
   --appointmentForm-reminder-fSize: clamp(0.875rem, 1.5vw, 1rem); /* 14px - 16px */
   --appointmentForm-inputLabel-fSize: clamp(0.75rem, 1.5vw, 1rem); /* 12px - 16px */
-  --appointmentForm-reqBtn-fSize: clamp(0.875rem, 1.5vw, 1rem); /* 14px - 16px */
+  --appointmentForm-submit-btn-fSize: clamp(0.875rem, 1.5vw, 1rem); /* 14px - 16px */
 
   --footer-fSize: 1rem; /* 16px */
 }
@@ -66,4 +66,5 @@ body{
 
   padding-top: var(--header-height);
   font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
 }
