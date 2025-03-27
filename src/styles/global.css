@@ -4,7 +4,7 @@
   --background-color: #FFFFFF;
 
   --header-logo-fSize: clamp(0.875rem, 2vw, 1.5625rem); /* 14px - 25px */
-  --nav-fSize: clamp(1.125rem, 1.5vw, 1.25rem); /* 18px - 20px */
+  --nav-fSize: 1.125rem ;/* 18px */
   --home-logo-fSize: clamp(3.125rem, 5vw, 6.25rem); /* 50px - 100px */
   --home-signup-heading-fSize: clamp(1rem, 1.5vw, 1.25rem); /* 16px - 20px */
   --home-signup-body-fSize: clamp(0.875rem, 1.5vw, 1.125rem); /* 14px - 18px */
