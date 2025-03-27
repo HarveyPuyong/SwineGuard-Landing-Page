@@ -17,7 +17,7 @@ function Footer(){
       </div>
       <div className="column2">
         <div className="socmed-list">
-          <h5 className="heaind">Messages us on:</h5>
+          <h5 className="heading">Message us on:</h5>
           <ul>
             <li>
                 <a href="#fb-link">

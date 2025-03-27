@@ -2,8 +2,8 @@
   position: relative;
   background-color: rgba(23, 204, 104, 0.4);
   color: var(--background-color);
-  height: clamp(532px, 80vw, 1024px);
-  padding: 160px 8% 0% 8%;
+  height: clamp(600px, 100vw, 1024px);
+  padding: 160px 8% 0 8%;
 }
 
 #contact-section::before {
@@ -44,7 +44,7 @@
 /* appointment form */
 .appointment-form{
   position: absolute;
-  bottom: -620px;
+  top: 90%;
   left: 5%;
   right: 5%;
   color: var(--secondary-color);
@@ -55,6 +55,7 @@
   max-width: 512px;
   padding: 4%;
   padding-top: 4rem;
+  margin-inline: auto;
 }
 
 .appointment-form .heading{
@@ -83,6 +84,7 @@
 .appointment-form select,
 .appointment-form input::placeholder{
   font-size: var(--appointmentForm-inputLabel-fSize);
+  word-wrap:break-word;
   font-weight: 500;
   color: var(--secondary-color);
 }
@@ -96,7 +98,7 @@
 
 .appointment-form .group{
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
 }
 
 .appointment-form .submit-btn{
