@@ -1,5 +1,5 @@
 #home-section{
-  margin-bottom: 12rem;
+  margin-bottom: 7rem;
 }
 
 #home-section .banner{
@@ -191,6 +191,9 @@
 
 
 @media(width > 50rem /*800px*/){
+  #home-section{
+    margin-bottom: 13rem;
+  }
   /* banner */
   #home-section .banner{
     display: flex;
