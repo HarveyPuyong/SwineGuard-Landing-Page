@@ -44,7 +44,7 @@ function SwineExpertsSection(){
       <div className="expert-cards-container">
         <img className="slider-btn left"  src={sliderIcon} alt="slider-btn" />
         <img className="slider-btn right" src={sliderIcon} alt="slider-btn" />       
-        <div className="scroller d-flex">
+        <div className="scroller d-grid">
           {swineExperts.map((data, id)=> <ExpertCard key={id} data={data}/>)}
         </div>
       </div>

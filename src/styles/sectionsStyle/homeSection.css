@@ -1,5 +1,5 @@
 #home-section{
-  margin-bottom: 7rem;
+  margin-bottom: 12rem;
 }
 
 #home-section .banner{
@@ -211,7 +211,7 @@
   #home-section .banner .overlay-content{
     height: fit-content;
     width: 50%;
-    padding-right: 7%;
+    padding-right: 8%;
     padding-top: 0rem;
   }
 
