@@ -4,7 +4,8 @@
 
 #home-section .banner{
   position: relative;
-  min-height: 515px;
+  align-items: center;
+  height: clamp(515px, 75vw, 600px);
   padding-top: 2.5rem;
 }
 #home-section .banner::before {
@@ -25,9 +26,10 @@
 #home-section .banner .floating-pig-img{
   position: absolute;
   z-index: 2;
-  bottom: -43px;
-  width: 227px;
-  height: 127px;
+  bottom: -48px;
+  width: clamp(235px, 70vw, 240px);
+  height: clamp(135px, 50vw, 140px) ;
+  filter: drop-shadow(9px 0px 1px rgba(0, 0, 0, 0.4));
 }
 
 #home-section .banner .overlay-content{
@@ -36,16 +38,16 @@
 
 #home-section .banner .overlay-content .swine-logo{
   display: flex;
-  margin: auto;
-  gap: 0.9rem;
+  gap: 1rem;
   align-items: center;
+  margin-inline: auto;
   width: fit-content;
-  margin-bottom: 11.8rem;
+  margin-bottom: 8rem;
 }
 
 #home-section .banner .overlay-content .swine-logo img{
-  width: clamp(90px, 20vw, 149px);
-  height: clamp(90px, 20vw, 149px);
+  width: clamp(90px, 10vw, 125px);
+  height: clamp(90px, 10vw, 125px);
 }
 
 #home-section .banner .overlay-content .swine-logo .label{
@@ -58,7 +60,7 @@
 
 #home-section .banner .overlay-content .signup-container{
   position: relative;
-  padding: 0 1rem;
+  padding: 0 6%;
 }
 
 #home-section .banner .overlay-content .signup-heading{
@@ -75,17 +77,20 @@
   line-height: 1.2em;
   padding: 0.5rem 0.3rem;
   margin-bottom: 1rem;
+  max-width: 600px;
 }
 
 #home-section .banner .overlay-content .join-btn{
   position: absolute;
   right: 2.6rem;
   color: var(--background-color);
+  font-size: var(--home-joinBtn-fSize);
+  font-weight: 600;
   border: 1px solid var(--background-color);
   background-color: #2FC575;
   border-radius: 8px;
-  width: clamp(89.4px, 4vw, 137px);
-  height: clamp(27.31px, 4vw, 44px);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 
@@ -94,13 +99,14 @@
   --side-spacing: 1rem; /*side spacing*/
   
   position: relative;
+  height: 352px;
 }
 
 .feature-cards-list .arrow-slider-btn{
   position: absolute;
   top: 30%;
-  width: clamp(24px, 5vw, 50px);
-  height: clamp(22.88px, 5vw, 50px);
+  width: clamp(27px, 5vw, 50px);
+  height: clamp(25.88px, 5vw, 50px);
   z-index: 3;
 }
 
@@ -115,7 +121,24 @@
 
 .feature-cards-list .feature-card{
   position: relative;
-  height: 344px;
+  height: 345px;
+}
+
+.feature-cards-list .feature-card .background-img{
+  position: absolute;
+  width: 100%;
+  height: 68%;
+  z-index: -1;
+  border-left: 1px solid white;
+}
+
+.feature-cards-list .feature-card .background-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(to right, 
   rgba(255, 255, 255, 1) 0%, 
   rgba(255, 255, 255, 0.95) 2%,
@@ -125,24 +148,26 @@
   rgba(255, 255, 255, 0.5) 74%, 
   rgba(255, 255, 255, 1) 91%
   );
+  pointer-events: none;
+  border-left: none;
 }
-.feature-cards-list .feature-card .background-img{
-  position: absolute;
+
+.feature-cards-list .feature-card .background-img img{
   width: 100%;
-  height: 64.9%;
-  z-index: -1;
+  height: 100%;
+  border-left: none;
 }
 
 .feature-cards-list .feature-card  .text-content{
   padding: 0 var(--side-spacing);
-  padding-top: 10.8rem;
+  padding-top: 11.2rem;
   color: #231F20;
 }
 
 .feature-cards-list .feature-card  .text-content .heading{
   font-size: var(--home-slider-heading-fSize);
   line-height: 1.5em;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 
 .feature-cards-list .feature-card  .text-content .heading .number{
@@ -154,4 +179,104 @@
   font-size: var(--home-slider-body-fSize);
   text-align: justify;
   font-weight: 500;
+}
+
+
+
+@media(width >= 28.625rem /*458px*/){
+  .feature-cards-list .feature-card  .text-content{
+    padding-top: 12.7rem;
+  }
+}
+
+
+@media(width > 50rem /*800px*/){
+  /* banner */
+  #home-section .banner{
+    display: flex;
+    align-content: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 0px;
+  }
+
+  #home-section .banner .floating-pig-img{
+    position: relative;  
+    transform: translateY(34.4%);
+    width: clamp(227px, 53vw, 850px);
+    height: clamp(127px, 65vw, 500px);
+    filter: drop-shadow(30px 0px 1px rgba(0, 0, 0, 0.4));
+  }
+
+  #home-section .banner .overlay-content{
+    height: fit-content;
+    width: 50%;
+    padding-right: 7%;
+    padding-top: 0rem;
+  }
+
+  #home-section .banner .overlay-content .swine-logo{
+    gap: 1.5rem;
+    margin-inline: 0px;
+    margin-bottom: 1.2rem;
+    margin-left: 3rem;
+  }
+
+  #home-section .banner .overlay-content .signup-heading{
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+  
+  #home-section .banner .overlay-content .signup-body{
+    color: #212121;
+  }
+
+  #home-section .banner .overlay-content .join-btn{
+    right: 3rem;
+  }
+
+  /*feature cards slider*/
+  .feature-cards-list .arrow-slider-btn{
+    --side-spacing: 2.5rem;
+
+    top: 20.5rem;
+  }
+
+  .feature-cards-list .feature-card{
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(255, 255, 255, 0.95) 2%,
+    rgba(255, 255, 255, 0.25) 11%,
+    rgba(255, 255, 255, 0) 41%, 
+    rgba(255, 255, 255, 0.25) 65%, 
+    rgba(255, 255, 255, 0.5) 74%, 
+    rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  .feature-cards-list .feature-card .background-img{
+    width: 73%;
+    height: 100%;
+  }
+
+  .feature-cards-list .feature-card  .text-content{
+    padding: 0 var(--side-spacing);
+    padding-top: 5rem;
+    max-width: 24rem;
+    color: #231F20;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+}
+
+
+@media(width > 62.5rem /*1000px*/){
+  .feature-cards-list .feature-card  .text-content{
+    margin-right: 12%;
+    max-width: 28rem;
+    padding-top: 4rem;
+  }
 }

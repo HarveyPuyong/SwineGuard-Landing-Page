@@ -3,7 +3,7 @@
   --secondary-color: #000000;
   --background-color: #FFFFFF;
 
-  --header-logo-fSize: clamp(0.875rem, 2vw, 1.5625rem); /* 14px - 25px */
+  --header-logo-fSize: clamp(0.875rem, 3vw, 1.5625rem); /* 14px - 25px */
   --nav-fSize: 1.125rem ;/* 18px */
   --home-logo-fSize: clamp(3.125rem, 5vw, 6.25rem); /* 50px - 100px */
   --home-signup-heading-fSize: clamp(1rem, 1.5vw, 1.25rem); /* 16px - 20px */
@@ -66,7 +66,7 @@ html{
 }
 
 body{
-  --header-height: clamp(59px, 15vw, 101px);
+  --header-height: clamp(59px, 13vw, 85px);
 
   padding-top: var(--header-height);
   font-family: "Poppins", sans-serif;

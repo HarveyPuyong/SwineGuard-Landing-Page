@@ -1,4 +1,4 @@
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 import Logo from "./../assets/icons/swineGuard-logo.png"
 import "./../styles/header.css"
 
@@ -22,10 +22,10 @@ function Header() {
       </div>
       <nav>
         <ul>
-          <Link className="nav-link" to="home-section" smooth={true} duration={500}>Home</Link>
-          <Link className="nav-link" to="about-section" smooth={true} duration={500}>About Us</Link>
-          <Link className="nav-link" to="services-section" smooth={true} duration={500}>Services</Link>
-          <Link className="nav-link" to="contacts-section" smooth={true} duration={500}>Contacts</Link>
+          <a className="nav-link" href="#" smooth={true} duration={500}>Home</a>
+          <a className="nav-link" href="#get-to-know-section" smooth={true} duration={500}>About Us</a>
+          <a className="nav-link" href="#services-section" smooth={true} duration={500}>Services</a>
+          <a className="nav-link" href="#contact-section" smooth={true} duration={500}>Contacts</a>
           <Link className="nav-link" to="/login">Login</Link>
         </ul>
       </nav>
