@@ -1,6 +1,6 @@
 #goals-section{
   position: relative;
-  margin-bottom: 13rem;
+  margin-bottom: 20rem;
   padding-bottom: 15%;
   color: var(--secondary-color);
 }
@@ -23,6 +23,8 @@
 }
 
 #goals-section .img-info-container{
+  display: flex;
+  flex-direction: column;
   padding:0 7%;
   padding-top: 2rem;
   padding-bottom: 5rem;
@@ -30,8 +32,7 @@
 
 #goals-section .pig-image {
   width: 100%;
-  max-width: 648px;
-  height: clamp(270px, 29vw, 420px);
+  height: clamp(270px, 40vw, 420px);
 }
 
 #goals-section .info{
@@ -40,6 +41,7 @@
 
 #goals-section .info .heading{
   font-size: var(--goals-heading-fSize);
+  line-height: 1.4em;
   font-weight: 900;
   color: #1E1E1E;
   margin-bottom: 0.6rem;
@@ -47,6 +49,7 @@
 
 #goals-section .info .heading .sub-heading{
   font-size: var(--goals-subheading-fSize);
+  display: block;
 }
 
 #goals-section .info .details{
@@ -85,4 +88,56 @@
   font-size: var(--goals-cardLabel-fSize);
   text-align: center;
   font-weight: 600;
+}
+
+
+@media(width >= 600px){
+  #goals-section .info .heading{
+    line-height: 1.3em;
+  }
+}
+
+
+@media(width >= 800px){
+  #goals-section .img-info-container{
+    flex-direction: row;
+    gap: 7%;
+    align-items: center;
+    padding:0 7%;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  #goals-section .pig-image {
+    width: 50%;
+    height: clamp(270px, 30vw, 420px);
+  }
+
+  #goals-section .info{
+    padding:0;
+    width: 33rem;
+    text-align: left;
+  }
+
+  #goals-section .info .heading{
+    line-height: 0.9em;
+  }
+
+  #goals-section .info .details{
+    font-size: var(--goals-details-fSize);
+    text-align: left;
+  }
+
+  #goals-section .goals-card-container{
+    justify-content: center;
+    gap: 6rem;
+  }
+}
+
+
+@media(width >= 1372px){
+  #goals-section .info .heading .sub-heading{
+    display: inline;
+    margin-left: 0.2rem;
+  }
 }

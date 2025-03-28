@@ -30,7 +30,7 @@ function GoalsSection(){
       <div className="img-info-container d-flex">
         <img className="pig-image" src={PigsImg} alt={PigsImg} />
         <div className="info">
-          <h1 className="heading">Our Goal: <br />
+          <h1 className="heading">Our Goal: 
             <span className="sub-heading">Revolutionizing Swine Farming with Modern Technology</span>
           </h1>
           <p className="details">
