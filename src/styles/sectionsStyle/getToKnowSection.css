@@ -9,19 +9,23 @@
   margin-bottom: 2.5rem;
 }
 
-#get-to-know-section .cards-container.d-grid{
-  display: grid;
-  align-items: center;
-  justify-content: center;
+#get-to-know-section .cards-container.d-flex{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
   row-gap: 2rem;
+  column-gap: 5rem;
+  padding: 0 1rem;
 }
 
 #get-to-know-section .cards-container .knowmore-card{
+  flex: 1 1 310px;
   position: relative;
   border-radius: 15px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-  padding: 1.9rem 1.1rem 1rem 1.1rem;
-  width: 310px;
+  padding: 1.9rem 1.1rem 0rem 1.1rem;
+  max-width: 350px;
+  min-height: 100%;
 }
 
 #get-to-know-section .cards-container .knowmore-card .icon{

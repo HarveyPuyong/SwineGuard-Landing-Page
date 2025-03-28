@@ -34,7 +34,7 @@ function GetToKnowSection(){
   return(
     <section id="get-to-know-section">
       <h1 className="section-heading">Get To Know More</h1>
-      <div className="cards-container d-grid">
+      <div className="cards-container d-flex">
         {knowMoreData.map((data, index) => <KnowMoreCard key={index} data={data} />)}
       </div>
     </section>
