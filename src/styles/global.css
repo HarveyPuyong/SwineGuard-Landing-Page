@@ -31,7 +31,7 @@
   --goals-details-fSize: clamp(0.875rem, 1.5vw, 1.125rem); /* 14px - 18px */
   --goals-cardLabel-fSize: clamp(0.75rem, 2vw, 1.25rem); /* 12px - 20px */
 
-  --contactSection-heading-fSize: clamp(1.75rem, 6vw, 4rem); /* 28px - 64px */
+  --contactSection-heading-fSize: clamp(1.75rem, 4.3vw, 4rem); /* 28px - 64px */
   --contactSection-body-fSize: clamp(0.875rem, 2vw, 1.25rem); /* 14px - 20px */
   --contactSection-joinBtn-fSize: clamp(0.875rem, 2vw, 1.25rem); /* 14px - 20px */
 

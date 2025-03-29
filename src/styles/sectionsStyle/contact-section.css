@@ -2,7 +2,7 @@
   position: relative;
   background-color: rgba(23, 204, 104, 0.4);
   color: var(--background-color);
-  height: clamp(600px, 100vw, 1024px);
+  height: clamp(600px, 80vw, 1024px);
   padding: 160px 8% 0 8%;
 }
 
@@ -22,6 +22,7 @@
 
 #contact-section .section-heading{
   font-size: var(--contactSection-heading-fSize);
+  line-height: 1.2em;
   margin-bottom: 1rem;
 }
 
@@ -76,8 +77,9 @@
   width: 100%;
   background-color: rgba(19, 187, 97, 0.3);
   border: none;
-  border-radius: inherit;
+  border-radius: 8px;
   padding: 1rem;
+  padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -111,4 +113,59 @@
   border-radius: inherit;
   background-color: #13BB61;
   margin-top: 1rem;
+}
+
+
+@media(width > 400px){
+  .appointment-form{
+    top: 80%;
+  }
+
+  .appointment-form select,
+  .appointment-form input{
+    margin-bottom: 1.5rem;
+    padding: 1.3rem 1rem;
+  }
+  .appointment-form .group{
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .appointment-form .group #appointment-schedule,
+  .appointment-form .group #appointment{
+    width: 150%;
+  }
+
+  .appointment-form .group #municipality{
+    width: 65%;
+  }
+
+  .appointment-form input{
+    padding-left: 1.5rem;
+  }
+}
+
+
+@media(width > 1200px){
+  #contact-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 120px ;
+    padding-bottom: 120px;
+  }
+
+  .appointment-form{
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    padding: 2%;
+    padding-bottom: 4rem;
+    margin-inline: 0px;
+  }
+  
+  }.appointment-form select,
+  .appointment-form input{
+    border-radius: 0px;
 }

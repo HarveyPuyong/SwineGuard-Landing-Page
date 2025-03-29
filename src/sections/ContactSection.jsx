@@ -19,21 +19,36 @@ function ContactSection(){
         <h3 className="heading">Send Your Appointment</h3>
         <p className="reminder-txt">Please ensure all text fields are properly filled out before submitting your appointment request.</p>
 
-        {/*select appointment*/}
-        <select id="appointment" name="appointment">
-          <option value="">Select Appointment</option>
-          <option value="checkup">Checkup</option>
-          <option value="vaccination">Vaccination</option>
-        </select>
+        
+        <div className="group">
+          {/*select appointment*/}
+          <select id="appointment" name="appointment">
+            <option value="">Select Appointment</option>
+            <option value="checkup">Checkup</option>
+            <option value="vaccination">Vaccination</option>
+          </select>
+
+          <select id="pig-type" name="pig-type">
+            <option value="piglet">Piglet</option>
+            <option value="sow">Sow</option>
+            <option value="gilt">Gilt</option>
+            <option value="boar">Boar</option>
+            <option value="barrow">Barrow</option>
+          </select>
+        </div>
+       
 
         <div className="group">
-          {/*select appointment-schedule*/}
-          <select id="schedule" name="schedule">
+          {/*appointment schedule*/}
+          <select id="appointment-schedule" name="schedule">
             <option value="">Schedule Appointment</option>
-            <option value="morning">Monday</option>
-            <option value="afternoon">Sunday</option>
-            <option value="afternoon">Thuesday</option>
-            <option value="afternoon">Wednesday</option>
+            <option value="monday">Monday</option>  
+            <option value="thuesday">Thuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>       
+            <option value="sunday">Sunday</option>       
           </select>
 
           {/*select appointment-time*/}
@@ -48,17 +63,17 @@ function ContactSection(){
           {/*select municipality*/}
           <select id="municipality" name="municipality">
             <option value="">Municipality</option>
-            <option value="">Boac</option>
-            <option value="">Gasan</option>
-            <option value="">Mogpog</option>
+            <option value="boac">Boac</option>
+            <option value="gasan">Gasan</option>
+            <option value="mogpog">Mogpog</option>
           </select>
 
           {/*select barangay*/}
           <select id="barangay" name="barangay">
             <option value="">Barangay</option>
-            <option value="">Maligaya</option>
-            <option value="">Tanza</option>
-            <option value="">Buliasnin</option>   
+            <option value="maligaya">Maligaya</option>
+            <option value="tanza">Tanza</option>
+            <option value="buliasnin">Buliasnin</option>   
           </select>
         </div>
 

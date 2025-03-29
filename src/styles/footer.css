@@ -1,11 +1,11 @@
 footer{
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 5rem;
   font-size: var(--footer-fSize);
   background-color: var(--primary-color);
   color: var(--background-color);
-  padding: 54rem 12% 1.5rem 12%;
+  padding: 60rem 12% 1.5rem 12%;
 }
 
 footer .column1{
@@ -41,4 +41,26 @@ footer .socmed-list ul{
 footer .socmed-list ul .socmed-icon{
   width: clamp(20px, 4.8vw, 25px);
   height: clamp(20px, 4.8vw, 25px)
+}
+
+
+@media(width > 400px){
+  footer{
+    padding-top: 50rem;
+  }
+}
+
+@media(width >= 800px){
+  footer{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50rem 8% 1.5rem 8%;
+  }
+}
+
+@media(width > 1200px){
+  footer{  
+    padding: 13rem 17% 1.5rem 17%;
+  }
 }

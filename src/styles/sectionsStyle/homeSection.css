@@ -190,7 +190,7 @@
 }
 
 
-@media(width > 50rem /*800px*/){
+@media(width > 830px /*800px*/){
   #home-section{
     margin-bottom: 15rem;
   }
