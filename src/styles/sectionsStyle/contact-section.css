@@ -72,6 +72,18 @@
   margin-bottom: 1.3rem;
 }
 
+.appointment-form select{
+  appearance: none; /* Removes default arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+
+  /* Custom dropdown icon */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23000000" d="M7 10l5 5 5-5H7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: clamp(20px, 6vw, 25px) ;
+}
+
 .appointment-form select,
 .appointment-form input{
   width: 100%;
@@ -165,7 +177,8 @@
     margin-inline: 0px;
   }
   
-  }.appointment-form select,
+  .appointment-form select,
   .appointment-form input{
     border-radius: 0px;
+  }
 }

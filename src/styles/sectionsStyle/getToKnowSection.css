@@ -1,6 +1,6 @@
 #get-to-know-section{
   text-align: center;
-  margin-bottom: 12rem;
+  margin-bottom: 16rem;
   color: var(--secondary-color);
 }
 
@@ -24,7 +24,7 @@
   border-radius: 15px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   padding: 1.9rem 1.1rem 0rem 1.1rem;
-  max-width: 350px;
+  max-width: 310px;
   min-height: 100%;
 }
 
@@ -42,6 +42,7 @@
 
 #get-to-know-section .cards-container .knowmore-card .details{
   font-size: var(--getToKnow-card-details-fSize);
+  text-indent: 30px;
   text-align: justify;
   margin-bottom: 4rem;
 }

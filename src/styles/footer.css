@@ -55,12 +55,12 @@ footer .socmed-list ul .socmed-icon{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 50rem 8% 1.5rem 8%;
+    padding: 50rem 8% 3rem 8%;
   }
 }
 
 @media(width > 1200px){
   footer{  
-    padding: 13rem 17% 1.5rem 17%;
+    padding: 13rem 19% 3rem 19%;
   }
 }

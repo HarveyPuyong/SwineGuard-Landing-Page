@@ -34,7 +34,7 @@ function HomeSection(){
             </div>           
             <div className="text-content">
               <h2 className="heading"><span className="number">10</span> Days After Birth: Strengthen Your Piglets' Health!</h2>
-              <p className="body">&nbsp; &nbsp;Early-stage care is essential for healthier pigs. Ensure their strong start with Iron Dextran vaccination—prevent anemia, enhance development, and support overall well-being.</p>
+              <p className="body">Early-stage care is essential for healthier pigs. Ensure their strong start with Iron Dextran vaccination—prevent anemia, enhance development, and support overall well-being.</p>
             </div>
           </div>
         </div>
