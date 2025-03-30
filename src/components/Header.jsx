@@ -40,11 +40,11 @@ function Header() {
       </div>
       <nav>
         <ul className={navVisible ? "show" : "hide"}>
-          <a className="nav-link" href="#" smooth={true} duration={500}>Home</a>
-          <a className="nav-link" href="#get-to-know-section" smooth={true} duration={500}>About Us</a>
-          <a className="nav-link" href="#services-section" smooth={true} duration={500}>Services</a>
-          <a className="nav-link" href="#contact-section" smooth={true} duration={500}>Contacts</a>
-          <a className="nav-link" to="/login">Login</a>
+          <a className="nav-link" href="#" onClick={() => setNavVisible(false)}>Home</a>
+          <a className="nav-link" href="#get-to-know-section" onClick={() => setNavVisible(false)}>About Us</a>
+          <a className="nav-link" href="#services-section" onClick={() => setNavVisible(false)}>Services</a>
+          <a className="nav-link" href="#contact-section" onClick={() => setNavVisible(false)}>Contacts</a>
+          <a className="nav-link" to="/login" onClick={() => setNavVisible(false)}>Login</a>
         </ul>
       </nav>
     </header>
