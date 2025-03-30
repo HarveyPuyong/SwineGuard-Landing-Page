@@ -72,10 +72,3 @@ body{
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
 }
-
-
-/* @media(width >= 1300px){
-  section{
-    margin-bottom: 0rem;
-  }
-} */

@@ -57,11 +57,18 @@ header .logo.when-show-nav .label{
 
 /* nav list */
 header nav ul{
-  display: none;
   gap: 0.5rem;
   align-items: center;
   text-align: center;
   flex-direction: column;
+}
+
+header nav ul.show{
+  display: flex;
+}
+
+header nav ul.hide{
+ display: none;
 }
 
 header nav ul .nav-link{
@@ -159,6 +166,10 @@ header .toggle-btn.hide-nav-icon .line:nth-child(3) {
     gap: 2.5rem;
     flex-direction: row;
   }
+
+  header nav ul.hide{
+    display: flex;
+   }
 
   header .toggle-btn{
     display: none;
