@@ -105,13 +105,12 @@
   }
 
   #swine-experts-section .expert-cards-container .scroller {
-    transform: translateX(0);
     justify-content: center;
     gap: 4.7rem;
   }
 
   #swine-experts-section .expert-cards-container .expert-card-wrapper {
-    display: flow;
+    display: block;
     max-width: 16.625rem /* 266px */;
   }
 

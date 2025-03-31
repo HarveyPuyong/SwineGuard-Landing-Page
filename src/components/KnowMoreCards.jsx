@@ -1,7 +1,4 @@
-import { Link } from "react-scroll"
-
 function KnowMoreCard({data}){
-  console.log(data.link)
   return(
     <div className="knowmore-card">
       <img src={data.icon} alt={data.icon} className="icon" />

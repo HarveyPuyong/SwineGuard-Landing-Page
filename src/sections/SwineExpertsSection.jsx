@@ -1,10 +1,11 @@
+import { useState, useEffect } from 'react'
+
 import VictoriaImg from './../assets/images/doctor3.jpg'
 import LaylayImg from './../assets/images/doctor2.jpeg'
 import DoeImg from './../assets/images/doctor1.png'
 import sliderIcon from "./../assets/icons/slider-icon2.png"
 import ExpertCard from "../components/SwineExperts";
 import "./../styles/sectionsStyle/swineExpertsSection.css"
-import { useState } from 'react';
 
 
 const swineExperts = [
@@ -39,7 +40,18 @@ const swineExperts = [
 
 
 function SwineExpertsSection() {
-  const [currentIndex, setCurrentIndex] = useState(1); // Start at the middle card
+  const [currentIndex, setCurrentIndex] = useState(1); 
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1049);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth >= 1049);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
 
   const moveRight = () => {
     if (currentIndex < swineExperts.length - 1) {
@@ -52,6 +64,8 @@ function SwineExpertsSection() {
       setCurrentIndex((prev) => prev - 1);
     }
   };
+
+
 
   return (
     <section id="swine-experts-section">
@@ -77,7 +91,7 @@ function SwineExpertsSection() {
           />
         )}
 
-        <div className="scroller" style={{ transform: `translateX(-${currentIndex * 100}%)`}}>
+        <div className="scroller" style={{transform: isWideScreen ? "translateX(0px)" : `translateX(-${currentIndex * 100}%)`}}>
           {swineExperts.map((data) => (
             <div key={data.id} className="expert-card-wrapper">
               <ExpertCard data={data} />

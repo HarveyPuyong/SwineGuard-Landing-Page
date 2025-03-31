@@ -10,7 +10,7 @@ function Header() {
   // Toggle navigation
   const toggleNav = () => {
     if(isMobile){
-      setNavVisible((prev) => !prev);
+      setNavVisible(prev => !prev);
     }
   };
 
@@ -27,9 +27,12 @@ function Header() {
   }, []);
 
 
+  const addClass = navVisible ? "when-show-nav" : "when-hide-nav";
+  
+
   return(
-    <header className={navVisible ? "when-show-nav" : "when-hide-nav"}>
-      <div className={`logo ${navVisible ? "when-show-nav" : "when-hide-nav"}`}>
+    <header className={addClass}>
+      <div className={`logo ${addClass}`}>
         <img src={Logo} alt={Logo} />
         <p className="label">Swine Guard</p>
       </div>
